@@ -13,21 +13,21 @@ body{
 
 .inner-cursor{
     position: fixed;
-    left: 50px;
-    height: 50px;
-    width: 50px;
+    left: 35px;
+    height: 35px;
+    width: 35px;
     transform: translate(-50%, -50%);
     background-color: #19a9d2;
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.7s, height 0.7s;
 }
 
  .inner-cursor.grow{
     width: 70px;
     height: 70px;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.7s, height 0.7s;
     background-color: #e0e1e3;
 }
 
