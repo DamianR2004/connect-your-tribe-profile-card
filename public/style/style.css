@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* hier staat de positie, afmetingen en kleur van de FlipCard*/
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    padding-left: 600px;
+    padding-top: 175px;
+    border-radius: 10px;
+
+}
+
+/* dit is de binnenkant van de flipcard, met 100% w en h zodat het goed blijft werken. En de transition en transform zodat de kaart kan draaien*/
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* Dit zorgt ervoor dat de kaart draait als je er over heen gaat met de cursor*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Dit zorgt ervoor dat de kaarten 2 sides zijn, en dat de front niet spiegelt*/
+
+.flip-card-back,
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    align-content: center;
+}
+
+/* was de kleur van de voorkant totdat ik er een plaatje in zette*/
+.flip-card-front {
+    background-color: gray;
+    color: black;
+}
+
+/* kleur en letters op de achterkant van de kaart*/
+
+.flip-card-back {
+    padding: 1em;
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom, rgba(194,212,168,1) 29%, rgba(25,205,216,1) 53%, rgba(0,212,255,1) 100%);
+    transform: rotateY(180deg);
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    text-align: left;
+
+}
+/* de kleur, grootte en transition van mijn social buttons*/
+.social-icon {
+    color: #7cdeff;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 10px;
+    margin-top: 1em;
+}
+
+/* als je over de social buttons gaat hoveren zullen deze blauw zijn*/
+
+.social-icon:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/*dit zorgt ervoor dat de icons in de kaart terecht komen*/
+
+.icons {
+    display: flex;
+    align-content: space-between;
+    padding-bottom: 1rem;
+    align-content: bottom;
+
+}
+
+.tekst2 {
+    color: transparent;
+
+}
+
+h3{
+    
+}

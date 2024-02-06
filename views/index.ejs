@@ -1,14 +1,74 @@
 <%- include('./partials/head') %>
+<section>
+  <div class="flip-card">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+              <img src="/images/IMG_3584.jpg" alt="<%= data.name %>" 
+              style="width:350px;
+              height:500px;">
+          </div>
+          <div class="flip-card-back">
 
-  <p><%= data.name %></p>
+              <!-- <div>
+                  <h3>Wie ben ik</h3>
+                  <p>Hallo allemaal, ik ben Damian. Ik ben 18 jaar en woon in Ede. Ook werk ik als
+                      verkoopmederwerker bij de Amac.
+                  </p>
+              </div>
+              <div class="text2">
+                  <h3>Hobby's</h3>
+                  <p>Natuurlijk heb ik ook wat hobby's een daarvan is voetbal. Zowel het spelen
+                      als het kijken, het spelen doe ik nog vaak met vrienden en voor het kijken ga ik
+                      vaak naar Vitesse toe om wedstrijden te zien.
+                      <h3>
+                          
+                      </h3>
+                      Tenslotte vindt ik het leuk om met mijn vrienden af te spreken dus vandaar dat
+                      ik ook nog lekker in Ede blijf :)
+                  </p> -->
 
-  <footer></footer>
-</article>
+                  <%- data.bio %>
+
+
+                  <div class="icons">
+                      <a
+                          class="social-icon"
+                          href="https://instagram.com/damianromeijn"
+                          target="_blank">
+                          <i class="fa-brands fa-instagram"></i>
+
+                      </a>
+
+                      <a
+                          class="social-icon"
+                          href="https://linkedin.com/in/damianromeijn"
+                          target="_blank">
+                          <i class="fa-brands fa-linkedin"></i>
+
+                      </a>
+
+                      <a
+                          class="social-icon"
+                          href="https://discordapp.com/users/441877876703363072"
+                          target="_blank">
+                          <i class="fa-brands fa-discord"></i>
+
+                      </a>
+
+                      <a
+                      class="social-icon"
+                      href="<%= data.github_handle %>"
+                      target="_blank">
+                      <i class="fa-brands fa-github"></i>
+
+                  </a>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 <%- include('./partials/foot') %>
