@@ -1,74 +1,52 @@
-<%- include('./partials/head') %>
-<section>
-  <div class="flip-card">
-      <div class="flip-card-inner">
-          <div class="flip-card-front">
+ <%- include('./partials/head') %>
 
-              <img src="/images/IMG_3584.jpg" alt="<%= data.name %>" 
-              style="width:350px;
-              height:500px;">
-          </div>
-          <div class="flip-card-back">
+ <div class="page-bg"></div>
 
-              <!-- <div>
-                  <h3>Wie ben ik</h3>
-                  <p>Hallo allemaal, ik ben Damian. Ik ben 18 jaar en woon in Ede. Ook werk ik als
-                      verkoopmederwerker bij de Amac.
-                  </p>
-              </div>
-              <div class="text2">
-                  <h3>Hobby's</h3>
-                  <p>Natuurlijk heb ik ook wat hobby's een daarvan is voetbal. Zowel het spelen
-                      als het kijken, het spelen doe ik nog vaak met vrienden en voor het kijken ga ik
-                      vaak naar Vitesse toe om wedstrijden te zien.
-                      <h3>
-                          
-                      </h3>
-                      Tenslotte vindt ik het leuk om met mijn vrienden af te spreken dus vandaar dat
-                      ik ook nog lekker in Ede blijf :)
-                  </p> -->
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
 
-                  <%- data.bio %>
+ <div class="card">
+
+    <section class="image">
+        <img src="images/IMG_3584.jpg" alt="">
+    </section>
+ 
+ <section class="divider">
+    <img src="images/divider.png" alt="divider">
+ </section>
+ 
 
 
-                  <div class="icons">
-                      <a
-                          class="social-icon"
-                          href="https://instagram.com/damianromeijn"
-                          target="_blank">
-                          <i class="fa-brands fa-instagram"></i>
-
-                      </a>
-
-                      <a
-                          class="social-icon"
-                          href="https://linkedin.com/in/damianromeijn"
-                          target="_blank">
-                          <i class="fa-brands fa-linkedin"></i>
-
-                      </a>
-
-                      <a
-                          class="social-icon"
-                          href="https://discordapp.com/users/441877876703363072"
-                          target="_blank">
-                          <i class="fa-brands fa-discord"></i>
-
-                      </a>
-
-                      <a
-                      class="social-icon"
-                      href="<%= data.github_handle %>"
-                      target="_blank">
-                      <i class="fa-brands fa-github"></i>
-
-                  </a>
-
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+<section class="name">
+<h1><%= data.name %></h1>
+<h1><%= data.surname %></h1>
 </section>
 
+<section class="colormode">
+    <button> 🌞 </button>
+
+</section>
+
+<section class="bio">
+   <%- data.bio %> 
+</section>
+
+
+<section class="socials">
+<ul>
+    <li> <a href=""></a> Instagram</li>
+    <li> <a href=""></a> Github</li>
+    <li> <a href=""></a> Website</li>
+    <li> <a href=""></a> linkedIn </li>
+</ul>
+</section>
+
+</div>
+
 <%- include('./partials/foot') %>
+
+
