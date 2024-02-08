@@ -173,18 +173,3 @@ button{
     cursor: pointer;
 
 }
-
-.carousel{
-    overflow: auto;
-    display: flex;
-    scroll-snap-type: x mandatory;
-}
-
-.image {
-    height: 200px;
-    width: 200px;
-    background: red;
-    margin-right: 5px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-  }
