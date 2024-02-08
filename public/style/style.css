@@ -1,33 +1,175 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+    list-style: none;
+    line-height: normal;
     
     
 }
 
-body{
-    background-color: #F7F4EA;
-    cursor: none;
+:root{
+    --backgroundclr: #F7F4EA;
+    --textclr: #000000;
+    --cursorclrinvrted: #19a9d2;
 }
+
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: var(--backgroundclr);
+    }
+    svg{
+        fill: var(--backgroundclr);
+        position: relative;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+    }
+    a, p, h1, h2, h3{
+        color: var(--textclr);
+    }
+
+    svg{
+        fill: var(--backgroundclr);
+    }
+    .card{
+        background-color: #000000;
+    }
+}
+
+/* cursor */
 
 .inner-cursor{
     position: fixed;
-    left: 35px;
-    height: 35px;
-    width: 35px;
+    left: 20px;
+    height: 20px;
+    width: 20px;
     transform: translate(-50%, -50%);
     background-color: #19a9d2;
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
-    transition: width 0.7s, height 0.7s;
+    transition: width 0.5s, height 0.5s;
 }
 
  .inner-cursor.grow{
-    width: 70px;
-    height: 70px;
-    transition: width 0.7s, height 0.7s;
+    width: 40px;
+    height: 40px;
+    transition: width 0.5s, height 0.5s;
     background-color: #e0e1e3;
 }
 
+
+/* body */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* card */
+.card {
+    position: relative;
+    height: 600px;
+    width: 450px;
+    background-color: var(--backgroundclr);
+    overflow: auto;
+}
+
+    img{
+    height: 90px;
+    width: 100%;
+} 
+
+
+
+.card{
+
+border: 5px solid var(--textclr);
+border-radius: 15px;
+}
+
+
+
+ p{
+    position: relative;
+    padding: 15px;
+    top: -50px;
+    max-width: 60ch;
+    font-size: 16px;
+
+    
+}
+
+h1{
+    position: relative;
+    padding-left: 15px;
+    font-size: 24px;
+    top: -4em;
+}
+
+.socials{
+    margin-top: 4em;
+}
+
+.socials ul{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1.5em;
+
+
+    & li{
+        cursor: pointer;
+        transition: .4s;
+        font-size: 2.5em;
+    }
+
+
+
+    & :hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+
+.bio{
+  & a :hover{
+    cursor: pointer;
+  }
+}
+
+.colormode{
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    position: relative;
+    top: -3em;
+}
+
+button{
+    background: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+
+}
