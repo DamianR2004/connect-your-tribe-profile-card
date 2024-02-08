@@ -12,7 +12,7 @@ outerCursor.style.left = `${x}px`;
 outerCursor.style.top = `${y}px`;
 }
 
-let text = Array.from(document.querySelectorAll("h1, h2, h3, a, .colormode"));
+let text = Array.from(document.querySelectorAll("h1, h2, h3, a"));
 
 text.forEach((tekst) => { 
   tekst.addEventListener("mouseover", () => {

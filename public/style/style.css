@@ -21,7 +21,7 @@
     --cursorclrinvrted: #19a9d2;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     body{
         background-color: var(--backgroundclr);
     }
@@ -34,16 +34,17 @@
         background-color: var(--backgroundclr);
     }
 
-    .socialsdm{
+    /* .socialsdm{
         display: none;
     }
 
     .dividerdm{
         display: none;
-    }
-}
+    } 
+}*/
 
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
     body{
         background-color: #333;
     }
@@ -66,7 +67,7 @@
     .card{
         background-color: #000000;
     }
-}
+} */
 
 /* cursor */
 
@@ -101,6 +102,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: var(--backgroundclr);
 }
 
 
@@ -110,6 +112,7 @@ body {
     height: 600px;
     width: 450px;
     overflow: auto;
+    background-color: var(--backgroundclr);
 }
 
 
@@ -140,16 +143,15 @@ border-radius: 15px;
 }
 
 
-.socials , .socialsdm{
+ .socials /*.socialsdm */{
     margin-top: 2em;
 }
 
-.socials ul , .socialsdm ul{
+ .socials ul /*.socialsdm ul */{ 
     align-items: center;
     justify-content: center;
     display: flex;
     gap: 1.5em;
-
 
     & li{
         cursor: pointer;
@@ -172,36 +174,23 @@ border-radius: 15px;
   }
 }
 
-.colormode{
+.image {
     display: flex;
     justify-content: end;
-    padding-right: 15px;
     position: relative;
-    top: -2.1em;
-
-   
-    
-
-    & :hover{
-        cursor: pointer;
-        transform: scale(1.2);
-        transition: .5s;
-
-    }
-
+   top: -2.1em; 
+    margin-right: 30px; 
+    z-index: 3;
 }
 
-button{
-    background: none;
-    border: none;
+img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: #333;
+    transition: transform 0.7s;
+}
+
+img:hover {
     cursor: pointer;
-
-    & i{
-        font-size: 2em;
-
-    }
+    transform: scale(1.6);
 }
