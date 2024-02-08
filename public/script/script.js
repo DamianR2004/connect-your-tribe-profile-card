@@ -23,3 +23,6 @@ text.forEach((tekst) => {
     });
 });
 
+
+
+

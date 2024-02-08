@@ -131,8 +131,8 @@ border-radius: 15px;
 & h1{
     position: relative;
     padding-left: 15px;
-    font-size: 24px;
-    top: -4em;
+    font-size: 30px;
+    top: -80px;
 }
 & a{
     color: var(--textclr);
@@ -141,7 +141,7 @@ border-radius: 15px;
 
 
 .socials , .socialsdm{
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .socials ul , .socialsdm ul{
@@ -177,7 +177,7 @@ border-radius: 15px;
     justify-content: end;
     padding-right: 15px;
     position: relative;
-    top: -3em;
+    top: -2.1em;
 
    
     
