@@ -109,7 +109,7 @@ border-radius: 15px;
  p{
     position: relative;
     padding: 15px;
-    top: -50px;
+    top: 80px;
     max-width: 60ch;
     font-size: 16px;
 
@@ -124,7 +124,7 @@ h1{
 }
 
 .socials{
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 .socials ul{
@@ -173,3 +173,18 @@ button{
     cursor: pointer;
 
 }
+
+.carousel{
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    background: red;
+    margin-right: 5px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
