@@ -15,7 +15,9 @@
 
 :root{
     --backgroundclr: #F7F4EA;
+    --backgroundclrinvrted: #000000;
     --textclr: #000000;
+    --textclrinvrted: #f7f4ea;
     --cursorclrinvrted: #19a9d2;
 }
 
@@ -28,6 +30,17 @@
         position: relative;
     }
 
+    .card{
+        background-color: var(--backgroundclr);
+    }
+
+    .socialsdm{
+        display: none;
+    }
+
+    .dividerdm{
+        display: none;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,11 +48,20 @@
         background-color: #333;
     }
     a, p, h1, h2, h3{
-        color: var(--textclr);
+        color: var(--textclrinvrted);
+        fill: var(--backgroundclr);
     }
 
     svg{
         fill: var(--backgroundclr);
+        stroke: var(--backgroundclr);
+    }
+ 
+    .socials{
+        display: none;
+    }
+    .divider{
+        display: none;
     }
     .card{
         background-color: #000000;
@@ -87,14 +109,8 @@ body {
     position: relative;
     height: 600px;
     width: 450px;
-    background-color: var(--backgroundclr);
     overflow: auto;
 }
-
-    img{
-    height: 90px;
-    width: 100%;
-} 
 
 
 
@@ -102,32 +118,33 @@ body {
 
 border: 5px solid var(--textclr);
 border-radius: 15px;
-}
 
-
-
- p{
+ & p{
     position: relative;
     padding: 15px;
-    top: 80px;
+    top: -20px;
     max-width: 60ch;
     font-size: 16px;
 
     
 }
-
-h1{
+& h1{
     position: relative;
     padding-left: 15px;
     font-size: 24px;
     top: -4em;
 }
+& a{
+    color: var(--textclr);
+}
+}
 
-.socials{
+
+.socials , .socialsdm{
     margin-top: 5em;
 }
 
-.socials ul{
+.socials ul , .socialsdm ul{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -161,6 +178,17 @@ h1{
     padding-right: 15px;
     position: relative;
     top: -3em;
+
+   
+    
+
+    & :hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: .5s;
+
+    }
+
 }
 
 button{
@@ -169,7 +197,11 @@ button{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #333;
     cursor: pointer;
 
+    & i{
+        font-size: 2em;
+
+    }
 }

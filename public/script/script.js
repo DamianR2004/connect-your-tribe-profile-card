@@ -22,3 +22,4 @@ text.forEach((tekst) => {
     innerCursor.classList.remove("grow");
     });
 });
+
