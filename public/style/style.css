@@ -188,7 +188,6 @@ img {
 }
 
 img:hover {
-    cursor: pointer;
     transform: scale(1.6);
 }
 
@@ -198,7 +197,6 @@ img:hover {
       padding: 7px;
     }
     img:hover {
-        cursor: pointer;
         transform: scale(1.3);
     }
     .image {
