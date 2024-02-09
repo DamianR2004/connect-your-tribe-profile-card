@@ -71,25 +71,7 @@
 
 /* cursor */
 
-.inner-cursor{
-    position: fixed;
-    left: 15px;
-    height: 15px;
-    width: 15px;
-    transform: translate(-50%, -50%);
-    background-color: #19a9d2;
-    mix-blend-mode: difference;
-    border-radius: 50%;
-    pointer-events: none;
-    transition: width 0.5s, height 0.5s;
-}
 
- .inner-cursor.grow{
-    width: 40px;
-    height: 40px;
-    transition: width 0.5s, height 0.5s;
-    background-color: #e0e1e3;
-}
 
 
 /* body */
@@ -106,27 +88,20 @@ body {
     padding: 10px;
 }
 
-
-
-
 .card{
     position: relative;
     height: 600px;
     width: 450px;
     overflow: auto;
     background-color: var(--backgroundclr);
-
-border: 5px solid var(--textclr);
-border-radius: 15px;
-
- & p{
+    border: 5px solid var(--textclr);
+    border-radius: 15px;
+& p{
     position: relative;
     padding: 15px;
     top: -20px;
     max-width: 60ch;
     font-size: 16px;
-
-    
 }
 & h1{
     position: relative;
@@ -137,38 +112,6 @@ border-radius: 15px;
 & a{
     color: var(--textclr);
 }
-}
-
-
- .socials /*.socialsdm */{
-    margin-top: 2em;
-}
-
- .socials ul /*.socialsdm ul */{ 
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 1.5em;
-
-    & li{
-        cursor: pointer;
-        transition: .4s;
-        font-size: 2.5em;
-    }
-
-
-
-    & :hover{
-        cursor: pointer;
-        transform: scale(1.2);
-    }
-}
-
-
-.bio{
-  & a :hover{
-    cursor: pointer;
-  }
 }
 
 .image {
@@ -191,6 +134,46 @@ img:hover {
     transform: scale(1.6);
 }
 
+.socials /*.socialsdm */{
+    margin-top: 2em;
+}
+
+ .socials ul /*.socialsdm ul */{ 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1.5em;
+
+    & li{
+        cursor: pointer;
+        transition: .4s;
+        font-size: 2.5em;
+    }
+    & :hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+.inner-cursor{
+    position: fixed;
+    left: 15px;
+    height: 15px;
+    width: 15px;
+    transform: translate(-50%, -50%);
+    background-color: #19a9d2;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+}
+
+ .inner-cursor.grow{
+    width: 40px;
+    height: 40px;
+    transition: width 0.5s, height 0.5s;
+    background-color: #e0e1e3;
+}
 
 @media only screen and (max-width: 376px) {
     body {
