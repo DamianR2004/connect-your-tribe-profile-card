@@ -73,9 +73,9 @@
 
 .inner-cursor{
     position: fixed;
-    left: 20px;
-    height: 20px;
-    width: 20px;
+    left: 15px;
+    height: 15px;
+    width: 15px;
     transform: translate(-50%, -50%);
     background-color: #19a9d2;
     mix-blend-mode: difference;
